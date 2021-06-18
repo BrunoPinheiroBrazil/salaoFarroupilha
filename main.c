@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
 		else
 		{
 		    printf("O salao ja chegou a sua capacidade total!\n");
-		    printf("Fechando as portas do salao!!\n");
+		    printf("Fechando as portas do salao!!\n\n");
 		    break;
 		}
 		
@@ -60,15 +60,15 @@ int main(int argc, char *argv[]) {
 		
 	}
 	
-	printf("O salao fechou as portas com %d familias", quantidadeFamilias+1);
-	printf("O salao comportou o total de %d pessoas", quantidadePessoasAtualTotal);
+	printf("O salao fechou as portas com %d familias\n", quantidadeFamilias+1);
+	printf("O salao comportou o total de %d pessoas\n", quantidadePessoasAtualTotal);
 	int lugaresRestantes = capacidadeMaxima - quantidadePessoasAtualTotal;
 	if(lugaresRestantes > 0)
 	{
-		printf("Ainda sobraram %d lugares no salao", lugaresRestantes);
+		printf("Ainda sobraram %d lugares no salao\n", lugaresRestantes);
 	}
 	else
 	{
-		printf("O salao ficou totalmente cheio! Todos lugares aproveitados!!");
+		printf("O salao ficou totalmente cheio! Todos lugares aproveitados!!\n");
 	}
 }
